@@ -1,0 +1,10 @@
+.vscode/
+node_modules/
+ignore/
+config.json
+bot_data.json
+todo.txt
+
+
+src/Session/CustomSessions/*
+!src/Session/CustomSessions/.gitkeep

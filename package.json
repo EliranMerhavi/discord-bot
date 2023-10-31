@@ -1,0 +1,34 @@
+{
+  "name": "discord-music-bot",
+  "version": "1.0.1",
+  "description": "this bot is used for roles system",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "test": "npx ts-node ignore/testting2.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliranMerhavi/discord-music-bot.git"
+  },
+  "keywords": [
+    "roles",
+    "bot"
+  ],
+  "author": "eliran merhavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliranMerhavi/discord-music-bot.git"
+  },
+  "homepage": "https://github.com/EliranMerhavi/discord-music-bot.git#readme",
+  "dependencies": {
+    "@discordjs/voice": "^0.14.0",
+    "cross-fetch": "^3.1.5",
+    "discord.js": "^14.7.1",
+    "ffmpeg-static": "^5.1.0",
+    "libsodium-wrappers": "^0.7.10",
+    "node-fetch": "^2.6.1",
+    "npm-check-updates": "^16.7.10",
+    "youtube-dl-exec": "^2.3.1"
+  }
+}
