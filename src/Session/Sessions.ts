@@ -1,6 +1,3 @@
-import { OurSurvivalSession } from "./CustomSessions/OurSurvivalSession";
-import { TestingBotServer } from "./CustomSessions/TestingBotServer";
-import { WeLoseLolSession } from "./CustomSessions/WeLoseLolSession";
 import { Session } from "./Session";
 
 
@@ -12,9 +9,9 @@ export class Sessions {
         this.sessions = new Map();
         // you can create custom sessions yourself and edit this section
         // start of adding custom sessions
-        this.sessions.set(WeLoseLolSession.instance.guildId, WeLoseLolSession.instance);
-        this.sessions.set(OurSurvivalSession.instance.guildId, OurSurvivalSession.instance);
-        this.sessions.set(TestingBotServer.instance.guildId, TestingBotServer.instance);
+        // this.sessions.set(WeLoseLolSession.instance.guildId, WeLoseLolSession.instance);
+        // this.sessions.set(OurSurvivalSession.instance.guildId, OurSurvivalSession.instance);
+        // this.sessions.set(TestingBotServer.instance.guildId, TestingBotServer.instance);
         // end of adding custom sessions 
     }
 

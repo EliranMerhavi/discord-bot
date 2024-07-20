@@ -9,20 +9,16 @@ export class BotData {
 
     constructor() {
         this.guilds_data = new Map();
-        for (var [id, data] of bot_data['guilds_data']) {
-            this.guilds_data.set(id as string, data as object);
-        }
+        console.log(bot_data['guilds_data']);
     }
 
     get_guild_data(guildId: string): any {
-   
         if (!this.guilds_data.has(guildId)) {
             this.guilds_data.set(guildId, {
                 "bot_prefix": "%"
             });
             this.save();
         }
-
         return this.guilds_data.get(guildId);
     }
 
@@ -32,7 +28,7 @@ export class BotData {
     }
 
     save(): void {
-        bot_data['guilds_data'] = Array.from(this.guilds_data.entries()) as (string | {bot_prefix: string;})[][];
+        bot_data['guilds_data'] = Array.from(this.guilds_data.entries());
         fs.writeFileSync('./src/bot_data.json', JSON.stringify(bot_data, null, 4));
     }
 
